@@ -20,9 +20,16 @@ function enable(){
 function sbmt (){
     if( document.getElementById("first").checked){
         console.log("all")
+        document.getElementById("selected").innerHTML="Super Admin yetkileriniz tanımlanmıştır."
     } else if (document.getElementById("second").checked){
         console.log(document.getElementById("secim").value)
+        if((document.getElementById("secim").value)==0){
+            document.getElementById("selected").innerHTML=("Rol Seçimi Yapılmadığı için devam edilemiyor.")
+        }else {
+        document.getElementById("selected").innerHTML=((document.getElementById("secim").value)+" "+"Yetkileriniz Tanımlanmıştır.")
+    }
     } else{
         console.log("null")
+        document.getElementById("selected").innerHTML=("Rol Seçimi Yapılmadığı için devam edilemiyor.")
     }
 }

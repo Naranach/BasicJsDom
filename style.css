@@ -4,7 +4,16 @@ main{
     margin: 10rem;
 }
 button{
-    border: 5px solid black;
+    border: 2px solid black;
     cursor: pointer;
     background-color: aqua;
+    margin: 3vh;
+
+
+}
+button:hover{
+    background-color: blueviolet;
+    transition:all 2s linear;;
+
+    
 }
