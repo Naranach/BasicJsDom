@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+       <h1>Lütfen Mevcut Rolünüzü Belirleyin.</h1>
+
+       <input type="checkbox" name="1" id="first" value="1" onchange="enable()">
+       <label for="1"> SuperAdmin</label> <br>
+        <input type="checkbox" name="2" id="second" value="2" onchange="enable()">
+        <label for="2">Rol Seçmek istiyorum.</label> <br>
+
+        <label for="condition">Seçiminizi Yapın.</label>
+        <select name="condition" id="secim" disabled>
+        <option value="null"></option>
+        <option value="admin">admin</option>
+        <option value="guest">guest</option>
+    </select> <br>
+<button id="sbmt" onclick="sbmt()">Onaylıyorum.</button>
+
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
